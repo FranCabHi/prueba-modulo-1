@@ -1,0 +1,22 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #231942;
+}
+
+.highlights {
+  font-family: "Quicksand", sans-serif;
+  color: #5e548e;
+}
+
+.styled {
+  font-family: "Dancing Script", cursive;
+  color: #f4e2eb;
+}
+
+header {
+  background-image: url("../img/PIA12348_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30rem;
+}
