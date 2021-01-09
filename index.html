@@ -70,14 +70,16 @@
         </div>
       </div>
     </nav>
-    <header id="header" class="text-center mt-5 pt-5">
+    <header class="text-center mt-5 pt-5">
       <div class="container-fluid align-text-bottom">
-        <h1 class="styled align-bottom font-weight-bold display-1">Porfolio</h1>
+        <h1 id="header" class="styled align-bottom font-weight-bold display-1">
+          Porfolio
+        </h1>
       </div>
     </header>
-    <div id="about" class="container">
+    <div class="container my-5">
       <div class="container px-3">
-        <h3 class="text-center highlights display-5">
+        <h3 id="about" class="text-center highlights display-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quo
           error soluta!
         </h3>
@@ -115,49 +117,77 @@
         </div>
       </div>
     </div>
-    <div class="container" id="experience">
-      <h2 class="display-4 text-center highlights">Mi experiencia</h2>
+    <div class="container my-5">
+      <h2 id="experience" class="display-4 text-center highlights">
+        Mi experiencia
+      </h2>
       <hr />
       <!-- Carousel -->
       <div class="container d-none d-md-block">
         <div class="pb-2">
-          <div id="prevCarousel" class="carousel slide" data-ride="carousel">
+          <div id="exp" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicator-dots carousel-indicators">
               <li
-                data-target="#prevCarousel"
+                data-target="#exp"
                 data-slide-to="0"
                 class="active bg-dark"
               ></li>
-              <li
-                data-target="#prevCarousel"
-                data-slide-to="1"
-                class="bg-dark"
-              ></li>
+              <li data-target="#exp" data-slide-to="1" class="bg-dark"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="row">
+                <div class="row text-center justify-content-center">
                   <div class="col-3">
-                    <i class="fab fa-html5"></i>
+                    <i
+                      class="fab fa-html5 fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    ></i>
                   </div>
                   <div class="col-3">
-                    <i class="fab fa-css3-alt"></i>
+                    <i
+                      class="fab fa-css3-alt fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    ></i>
                   </div>
                   <div class="col-3">
-                    <i class="fab fa-js-square"></i>
+                    <i
+                      class="fab fa-js-square fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Javascript"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="row">
+                <div class="row text-center justify-content-center">
                   <div class="col-3">
-                    <i class="fas fa-language"></i>
+                    <i
+                      class="fas fa-language fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Traducción"
+                    ></i>
                   </div>
                   <div class="col-3">
-                    <i class="fas fa-exchange-alt"></i>
+                    <i
+                      class="fas fa-exchange-alt fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Transcreación"
+                    ></i>
                   </div>
                   <div class="col-3">
-                    <i class="fas fa-trademark"></i>
+                    <i
+                      class="fas fa-trademark fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Marcas comerciales"
+                    ></i>
                   </div>
                 </div>
               </div>
