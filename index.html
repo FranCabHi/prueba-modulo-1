@@ -77,7 +77,7 @@
         </h1>
       </div>
     </header>
-    <div class="container my-5">
+    <div class="container my-5 d-none d-md-block">
       <div class="container px-3">
         <h3 id="about" class="text-center highlights display-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quo
@@ -123,7 +123,7 @@
       </h2>
       <hr />
       <!-- Carousel -->
-      <div class="container d-none d-md-block">
+      <div class="container">
         <div class="pb-2">
           <div id="exp" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicator-dots carousel-indicators">
@@ -133,6 +133,8 @@
                 class="active bg-dark"
               ></li>
               <li data-target="#exp" data-slide-to="1" class="bg-dark"></li>
+
+              <li data-target="#exp" data-slide-to="2" class="bg-dark"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -145,7 +147,7 @@
                       title="HTML5"
                     ></i>
                   </div>
-                  <div class="col-3">
+                  <div class="col-6 col-md-4">
                     <i
                       class="fab fa-css3-alt fa-5x"
                       data-toggle="tooltip"
@@ -153,7 +155,12 @@
                       title="CSS3"
                     ></i>
                   </div>
-                  <div class="col-3">
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row text-center justify-content-center">
+                  <div class="col-6 col-md-4">
                     <i
                       class="fab fa-js-square fa-5x"
                       data-toggle="tooltip"
@@ -161,11 +168,20 @@
                       title="Javascript"
                     ></i>
                   </div>
+                  <div class="col-6 col-md-4">
+                    <i
+                      class="far fa-registered fa-5x"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Marcas comerciales"
+                    ></i>
+                  </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="row text-center justify-content-center">
-                  <div class="col-3">
+                  <div class="col-6 col-md-4">
                     <i
                       class="fas fa-language fa-5x"
                       data-toggle="tooltip"
@@ -173,20 +189,12 @@
                       title="Traducción"
                     ></i>
                   </div>
-                  <div class="col-3">
+                  <div class="col-6 col-md-4">
                     <i
                       class="fas fa-exchange-alt fa-5x"
                       data-toggle="tooltip"
                       data-placement="bottom"
                       title="Transcreación"
-                    ></i>
-                  </div>
-                  <div class="col-3">
-                    <i
-                      class="fas fa-trademark fa-5x"
-                      data-toggle="tooltip"
-                      data-placement="bottom"
-                      title="Marcas comerciales"
                     ></i>
                   </div>
                 </div>
