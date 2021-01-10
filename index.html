@@ -54,7 +54,7 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item d-none d-md-block">
               <a class="nav-link active" href="#about">Sobre mí</a>
             </li>
             <li class="nav-item">
@@ -209,6 +209,7 @@
       <hr />
       <!-- card deck -->
       <div class="row row-cols-1 row-cols-md-3">
+        <!-- Meet & Coffee -->
         <div class="col mb-4">
           <div class="card">
             <img
@@ -217,20 +218,86 @@
               alt="Meet & Coffee"
             />
             <div class="card-body">
-              <h5 class="card-title">Meet & Coffee</h5>
-              <p class="card-text">
+              <h4 class="card-title highlights">Meet & Coffee</h4>
+              <p class="card-text text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 alias fuga aut possimus qui, repellat officiis dignissimos,
                 dolorum debitis a doloribus, libero exercitationem reiciendis!
-                Provident, explicabo.
+                Provident, explicabo, similique repellendus.
               </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-toggle="modal"
+                data-target="#coffee"
+              >
+                Más información
+              </button>
             </div>
+
             <div class="card-footer">
               <small class="text-muted">24 de noviembre del 2020</small>
             </div>
           </div>
         </div>
 
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="coffee"
+          tabindex="-1"
+          aria-labelledby="coffeeLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title highlights" id="coffee">
+                  Meet & Coffee
+                </h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <img
+                  src="assets/img/mc_prev.png"
+                  class="img-fluid mb-3"
+                  alt="Meet & Coffee"
+                />
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                  suscipit alias assumenda ex exercitationem tenetur debitis
+                  dolorem provident quas minus. Ullam ad veniam quas et error
+                  veritatis ratione mollitia. In!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit sequi quia rem libero, fugiat autem fugit minus
+                  nisi commodi architecto delectus accusantium sapiente ducimus!
+                  Recusandae ipsa ipsam quia atque alias.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Iguanas -->
         <div class="col mb-4">
           <div class="card">
             <img
@@ -239,12 +306,21 @@
               alt="Iguanas"
             />
             <div class="card-body">
-              <h5 class="card-title">Iguanas</h5>
-              <p class="card-text">
+              <h4 class="card-title highlights">Iguanas</h4>
+              <p class="card-text text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                 at alias mollitia repudiandae dolores et libero illo corporis
-                veniam aliquid, laudantium, vero, eligendi voluptate.
+                veniam aliquid, laudantium, vero, eligendi.
               </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-toggle="modal"
+                data-target="#iguana"
+              >
+                Más información
+              </button>
             </div>
             <div class="card-footer">
               <small class="text-muted">26 de noviembre del 2020</small>
@@ -252,6 +328,59 @@
           </div>
         </div>
 
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="iguana"
+          tabindex="-1"
+          aria-labelledby="iguanaLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title highlights" id="iguana">Iguanas</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <img
+                  src="assets/img/iguana_prev.png"
+                  class="img-fluid mb-3"
+                  alt="Iguanas"
+                />
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                  suscipit alias assumenda ex exercitationem tenetur debitis
+                  dolorem provident quas minus. Ullam ad veniam quas et error
+                  veritatis ratione mollitia. In!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit sequi quia rem libero, fugiat autem fugit minus
+                  nisi commodi architecto delectus accusantium sapiente ducimus!
+                  Recusandae ipsa ipsam quia atque alias.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Suricata -->
         <div class="col mb-4">
           <div class="card">
             <img
@@ -260,20 +389,81 @@
               alt="Suricata"
             />
             <div class="card-body">
-              <h5 class="card-title">Suricata</h5>
-              <p class="card-text">
+              <h4 class="card-title highlights">Suricata</h4>
+              <p class="card-text text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloribus accusantium esse maiores nulla! Quas, consectetur
                 ipsam distinctio dolorem, nisi similique tempora dolore qui enim
                 modi laudantium.
               </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-toggle="modal"
+                data-target="#suricata"
+              >
+                Más información
+              </button>
             </div>
             <div class="card-footer">
               <small class="text-muted">4 de diciembre del 2020</small>
             </div>
           </div>
         </div>
-
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="suricata"
+          tabindex="-1"
+          aria-labelledby="suricataLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title highlights" id="suricata">Suricata</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <img
+                  src="assets/img/suricata_prev.png"
+                  class="img-fluid mb-3"
+                  alt="Suricata"
+                />
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                  suscipit alias assumenda ex exercitationem tenetur debitis
+                  dolorem provident quas minus. Ullam ad veniam quas et error
+                  veritatis ratione mollitia. In!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit sequi quia rem libero, fugiat autem fugit minus
+                  nisi commodi architecto delectus accusantium sapiente ducimus!
+                  Recusandae ipsa ipsam quia atque alias.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cuppon -->
         <div class="col mb-4">
           <div class="card">
             <img
@@ -282,20 +472,81 @@
               alt="Cuppon"
             />
             <div class="card-body">
-              <h5 class="card-title">Cuppon</h5>
-              <p class="card-text">
+              <h4 class="card-title highlights">Cuppon</h4>
+              <p class="card-text text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus iure error ipsa corrupti magni quam, reiciendis
                 voluptatibus dolor quidem eius architecto dolorum quae est
-                facere sit quia similique repellendus eligendi.
+                facere sit quia.
               </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-toggle="modal"
+                data-target="#cuppon"
+              >
+                Más información
+              </button>
             </div>
             <div class="card-footer">
               <small class="text-muted">6 de diciembre del 2020</small>
             </div>
           </div>
         </div>
-
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="cuppon"
+          tabindex="-1"
+          aria-labelledby="cupponLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title highlights" id="cuppon">Cuppon</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <img
+                  src="assets/img/cuppon_prev.png"
+                  class="img-fluid mb-3"
+                  alt="Cuppon"
+                />
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                  suscipit alias assumenda ex exercitationem tenetur debitis
+                  dolorem provident quas minus. Ullam ad veniam quas et error
+                  veritatis ratione mollitia. In!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit sequi quia rem libero, fugiat autem fugit minus
+                  nisi commodi architecto delectus accusantium sapiente ducimus!
+                  Recusandae ipsa ipsam quia atque alias.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Olivia -->
         <div class="col mb-4">
           <div class="card">
             <img
@@ -304,20 +555,82 @@
               alt="Olivia Ros"
             />
             <div class="card-body">
-              <h5 class="card-title">Olivia Ros</h5>
-              <p class="card-text">
+              <h4 class="card-title highlights">Olivia Ros</h4>
+              <p class="card-text text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 alias fuga aut possimus qui, repellat officiis dignissimos,
                 dolorum debitis a doloribus, libero exercitationem reiciendis!
-                Provident, explicabo. Repellat ab ipsam voluptatem.
+                Provident, explicabo. Repellat ab ipsam.
               </p>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-toggle="modal"
+                data-target="#olivia"
+              >
+                Más información
+              </button>
             </div>
             <div class="card-footer">
               <small class="text-muted">15 de diciembre del 2020</small>
             </div>
           </div>
         </div>
-
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="olivia"
+          tabindex="-1"
+          aria-labelledby="oliviaLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title highlights" id="olivia">Olivia Ros</h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-justify">
+                <img
+                  src="assets/img/olivia_prev.png"
+                  class="img-fluid mb-3"
+                  alt="Olivia Ros"
+                />
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                  suscipit alias assumenda ex exercitationem tenetur debitis
+                  dolorem provident quas minus. Ullam ad veniam quas et error
+                  veritatis ratione mollitia. In!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit sequi quia rem libero, fugiat autem fugit minus
+                  nisi commodi architecto delectus accusantium sapiente ducimus!
+                  Recusandae ipsa ipsam quia atque alias.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ricomida -->
         <div class="col mb-4">
           <div class="card">
             <img
@@ -326,13 +639,23 @@
               alt="Ricomida"
             />
             <div class="card-body">
-              <h5 class="card-title">Ricomida</h5>
-              <p class="card-text">
+              <h4 class="card-title highlights">Ricomida</h4>
+              <p class="card-text text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 alias fuga aut possimus qui, repellat officiis dignissimos,
                 dolorum debitis a doloribus, libero exercitationem reiciendis!
-                Provident, explicabo. Repellat ab ipsam voluptatem.
+                Provident, explicabo. Repellat ab ipsam.
               </p>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-toggle="modal"
+                data-target="#ricomida"
+              >
+                Más información
+              </button>
             </div>
             <div class="card-footer">
               <small class="text-muted">17 de diciembre del 2020</small>
@@ -341,7 +664,60 @@
         </div>
       </div>
     </div>
-    <div class="container" id="contact">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ricomida"
+      tabindex="-1"
+      aria-labelledby="ricomidaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title highlights" id="coffee">Ricomida</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-justify">
+            <img
+              src="assets/img/ricomida_prev.png"
+              class="img-fluid mb-3"
+              alt="Ricomida"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+              suscipit alias assumenda ex exercitationem tenetur debitis dolorem
+              provident quas minus. Ullam ad veniam quas et error veritatis
+              ratione mollitia. In!
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit sequi quia rem libero, fugiat autem fugit minus nisi
+              commodi architecto delectus accusantium sapiente ducimus!
+              Recusandae ipsa ipsam quia atque alias.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="container my-3" id="contact">
       <h2 class="display-4 text-center highlights">Contacto</h2>
       <hr />
       <div
@@ -372,21 +748,31 @@
       </script>
     </div>
     <footer>
-      <div class="container-fluid works-style">
+      <div class="container-fluid works-style p-5">
         <div class="row">
-          <div class="col-12 col-md-6 styled">Fran Cabrera</div>
-          <div class="col-12 col-md-6">
-            <a href="https://github.com/FranCabHi" target="_blank"
-              ><i class="fab fa-github"></i
+          <div
+            class="styled col-12 col-md-6 text-center text-md-left display-4"
+          >
+            Fran Cabrera
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-right">
+            <a
+              href="https://github.com/FranCabHi"
+              class="highlights"
+              target="_blank"
+              ><i class="px-2 fab fa-github fa-4x"></i
             ></a>
-            <a href="https://www.linkedin.com/" target="_blank"
-              ><i class="fab fa-linkedin"></i
+            <a
+              href="https://www.linkedin.com/"
+              class="highlights"
+              target="_blank"
+              ><i class="px-2 fab fa-linkedin fa-4x"></i
             ></a>
-            <a href="http://www.twitter.com" target="_blank"
-              ><i class="fab fa-twitter-square"></i
+            <a href="https://www.twitter.com" target="_blank" class="highlights"
+              ><i class="px-2 fab fa-twitter-square fa-4x"></i
             ></a>
-            <a href="http://proz.com" target="_blank"
-              ><i class="fas fa-pencil-alt"></i
+            <a href="https://proz.com" target="_blank" class="highlights"
+              ><i class="px-2 fas fa-pencil-alt fa-4x"></i
             ></a>
           </div>
         </div>
